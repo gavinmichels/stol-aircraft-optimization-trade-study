@@ -109,4 +109,21 @@ All speed calculations within the MATLAB performance models are performed in kno
 ---
 
 ## Optimization Method
-
+```
+Design Variables
+↓
+Configuration Generation
+↓
+Performance Calculations
+↓
+Constraint Evaluation
+↓
+Feasible Configurations
+↓
+Weighted Decision Matrix
+↓
+Optimal Configuration
+|
++--------------------+
+↓                    ↓
+Pareto Analysis      Sensitivity Analysis
