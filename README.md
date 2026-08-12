@@ -25,7 +25,7 @@ The primary design variables investigated are:
 | Aspect Ratio | 6.00-9.00 |
 | Engine Power | 160-220 hp |
 | Flap Configuration | Plain, Slotted, Fowler |
-|---|---:|
+
 The resulting design space contains **3,276 aircraft configurations**.
 
 ---
@@ -36,4 +36,4 @@ Each configuration is evaluated using analytical performance models for:
 ### Stall Speed
 The stall speed is calculated from aircraft weight, wing area, air density, and maximum lift coefficient.
 
-\[V_s = \sqrt{\frac{2W}{\rho S C_{L_{\max}}}}\]
+$$ V_s = \sqrt{\frac{2W}{\rho S C_{L_{\max}}}} $$
