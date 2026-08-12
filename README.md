@@ -65,3 +65,48 @@ Cruise performance is estimated using the aircraft drag model and available prop
 
 ### Aircraft Weight
 Aircraft gross weight is estimated as a function of the selected design variables, allowing the effects of wing area, aspect ratio, and engine power to be incorporated into the performance calculations.
+
+---
+
+## Aerodynamic Model
+The aerodynamic model uses the fundamental lift and drag relationships:
+
+$$ L = \frac{1}{2}\rho V^2 S C_L $$
+
+$$ D = \frac{1}{2}\rho V^2 S C_D $$
+
+The drag coefficient is modeled as:
+
+$$ C_D = C_{D0} + \frac{C_L^2}{\pi e AR} $$
+
+where:
+
+$$ C_{D0} = zero-lift drag coefficient $$
+$$ (e\) = Oswald efficiency factor $$
+$$ (AR\) = wing aspect ratio
+
+The model captures the primary relationship between aircraft geometry, lift, drag, and flight performance while remaining suitable for a preliminary design study.
+
+---
+
+## Design Constraints
+
+Configurations are evaluated against the following requirements:
+
+| Requirement | Constraint |
+|---|---:|
+| Stall Speed | ≤ 45 mph |
+| Takeoff Ground Roll | ≤ 250 ft |
+| Takeoff Over 50-ft Obstacle | ≤ 600 ft |
+| Landing Ground Roll | ≤ 300 ft |
+| Rate of Climb | ≥ 1,200 ft/min |
+| Cruise Speed | ≥ 110 mph |
+| Wing Span | ≤ 38 ft |
+| Gross Weight | ≤ 2,400 lb |
+
+All speed calculations within the MATLAB performance models are performed in knots, while the original design requirements are converted to consistent units during constraint evaluation.
+
+---
+
+## Optimization Method
+
