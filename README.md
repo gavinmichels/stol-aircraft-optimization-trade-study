@@ -37,3 +37,31 @@ Each configuration is evaluated using analytical performance models for:
 The stall speed is calculated from aircraft weight, wing area, air density, and maximum lift coefficient.
 
 $$ V_s = \sqrt{\frac{2W}{\rho S C_{L_{\max}}}} $$
+
+### Takeoff Ground Roll
+The takeoff ground roll is calculated using a velocity-stepped force balance from brake release to liftoff.
+
+The model accounts for:
+- Lift
+- Aerodynamic drag
+- Propulsive force
+- Rolling resistance
+- Aircraft mass
+- Increasing lift coefficient during the ground roll
+
+### Takeoff Distance Over a 50-ft Obstacle
+The takeoff model is extended to estimate the distance required to clear a 50-ft obstacle.
+
+### Landing Ground Roll
+Landing ground roll is estimated using the relationship between touchdown kinetic energy and stall speed relative to the baseline aircraft.
+
+### Rate of Climb
+Rate of climb is calculated from the difference between available power and power required.
+
+$$ ROC = \frac{P_{available} - P_{required}{W} $$
+
+### Cruise Speed
+Cruise performance is estimated using the aircraft drag model and available propulsive power.
+
+### Aircraft Weight
+Aircraft gross weight is estimated as a function of the selected design variables, allowing the effects of wing area, aspect ratio, and engine power to be incorporated into the performance calculations.
