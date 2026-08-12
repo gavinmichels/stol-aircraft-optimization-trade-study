@@ -79,12 +79,6 @@ The drag coefficient is modeled as:
 
 $$ C_D = C_{D0} + \frac{C_L^2}{\pi e AR} $$
 
-where:
-
-$$ C_{D0} = zero-lift drag coefficient $$
-$$ (e\) = Oswald efficiency factor $$
-$$ (AR\) = wing aspect ratio
-
 The model captures the primary relationship between aircraft geometry, lift, drag, and flight performance while remaining suitable for a preliminary design study.
 
 ---
