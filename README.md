@@ -122,9 +122,11 @@ Optimal Configuration
 ↓                    ↓
 Pareto Analysis      Sensitivity Analysis
 ```
+
 ---
 
 ## Repository Structure
+```
 stol-aircraft-optimization-trade-study/
 │
 ├── README.md
@@ -162,3 +164,4 @@ stol-aircraft-optimization-trade-study/
 │
 └── report/
     └── STOL_Trade_Study.pdf
+```
