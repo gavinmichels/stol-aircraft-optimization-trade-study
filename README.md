@@ -58,7 +58,7 @@ Landing ground roll is estimated using the relationship between touchdown kineti
 ### Rate of Climb
 Rate of climb is calculated from the difference between available power and power required.
 
-$$ ROC = \frac{P_{available} - P_{required}{W} $$
+$$ ROC = \frac{P_{available} - P_{required}}{W} $$
 
 ### Cruise Speed
 Cruise performance is estimated using the aircraft drag model and available propulsive power.
