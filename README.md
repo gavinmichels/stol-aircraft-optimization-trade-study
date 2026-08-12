@@ -165,3 +165,53 @@ stol-aircraft-optimization-trade-study/
 └── report/
     └── STOL_Trade_Study.pdf
 ```
+
+---
+
+## Results
+The optimization identified **14 feasible configurations** satisfying all defined design constraints. The highest-scoring feasible configuration was:
+
+| Parameter | Optimal Configuration |
+|---|---:|
+| Wing Area | 220 ft² |
+| Aspect Ratio | 6.25 |
+| Engine Power | 220 hp |
+| Flap Configuration | Fowler |
+| Gross Weight | 2,347.1 lb |
+| Wing Span | 37.08 ft |
+| Maximum Lift Coefficient | 2.10 |
+| Stall Speed | 38.74 kts |
+| Takeoff Ground Roll | 148.68 ft |
+| Takeoff Over 50 ft | 425.35 ft |
+| Landing Ground Roll | 281.53 ft |
+| Rate of Climb | 1,830.8 ft/min |
+| Cruise Speed | 99.33 kts |
+| Decision Matrix Score | 0.849 |
+
+---
+
+## Pareto Front
+The Pareto analysis identified **8 Pareto-optimal configurations**. These configurations primarily consisted of 220 ft² wing-area aircraft using Fowler flaps, with aspect ratios between 6.00 and 6.50 and engine powers between 200 and 220 hp.
+
+---
+
+## Sensitivity Analysis
+The sensitivity analysis evaluates the robustness of the optimization result with respect to the weighting factors used in the decision matrix. The baseline optimization assigns a predetermined percentage weight to each performance criterion based on its relative importance to the overall STOL aircraft design objective.
+
+To evaluate the influence of these subjective weighting decisions, the analysis systematically varies the weighting assigned to each criterion while maintaining the remaining criteria within the established weighting framework. The optimal feasible configuration is recalculated at each weighting level, allowing changes in the selected design to be observed.
+
+For each criterion, its weighting is varied from **5% to 45%** in 5% increments. At each weighting level, the decision matrix is recalculated and the highest-scoring feasible configuration is recorded. This process determines whether the selected aircraft configuration remains consistent when the relative importance of individual performance criteria is changed.
+
+The resulting sensitivity analysis provides a measure of confidence in the final design selection. A configuration that remains optimal across a wide range of criterion weights is less dependent on the original weighting assumptions, while significant changes in the selected configuration indicate that the optimization is more sensitive to how the design objectives are prioritized.
+
+| Parameter | Optimal Configuration | Unique Winning Configurations |
+|---|---:|---:|
+| Takeoff Ground Roll | 5-45% | 2 |
+| Takeoff Over 50-ft Obstacle | 5-45% | 2 |
+| Landing Ground Roll | 5-45% | 2 |
+| Rate of Climb | 5-45% | 3 |
+| Cruise Speed | 5-45% | 2 |
+| Gross Weight | 5-45% | 3 |
+| Wing Span | 5-45% | 2 |
+
+The results indicate that the optimization is relatively robust to changes in the selected criterion weights. Across the tested weighting ranges, only a small number of distinct configurations became the highest-scoring solution. This suggests that the final design is not solely a consequence of the initial weighting assumptions, although criteria such as rate of climb and gross weight exhibit somewhat greater sensitivity than the other objectives.
