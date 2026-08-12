@@ -17,7 +17,7 @@ This project develops a MATLAB-based preliminary design and optimization framewo
 
 ---
 
-## Design Variabels
+## Design Variables
 The primary design variables investigated are:
 | Design Variable | Range |
 |---|---:|
