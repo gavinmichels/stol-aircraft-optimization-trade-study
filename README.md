@@ -127,3 +127,44 @@ Optimal Configuration
 +--------------------+
 ↓                    ↓
 Pareto Analysis      Sensitivity Analysis
+```
+---
+
+## Repository Structure
+stol-aircraft-optimization-trade-study/
+│
+├── README.md
+├── main.m
+│
+├── inputs/
+│   ├── designVariables.m
+│   ├── aircraftConstants.m
+│   └── requirements.m
+│
+├── models/
+│   ├── stallSpeed.m
+│   ├── takeoffDistance.m
+│   ├── takeoff50ft.m
+│   ├── landingDistance.m
+│   ├── climbRate.m
+│   ├── cruiseSpeed.m
+│   └── aircraftWeight.m
+│
+├── optimization/
+│   ├── generateConfigurations.m
+│   ├── checkConstraints.m
+│   ├── constraintMargins.m
+│   └── decisionMatrix.m
+│
+├── analysis/
+│   ├── tradeSpacePlots.m
+│   ├── paretoPlot.m
+│   └── sensitivityAnalysis.m
+│
+├── figures/
+│   ├── tradeSpace.png
+│   ├── paretoFront.png
+│   └── sensitivity.png
+│
+└── report/
+    └── STOL_Trade_Study.pdf
